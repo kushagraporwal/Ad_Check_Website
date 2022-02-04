@@ -23,7 +23,7 @@ const Userlogin = () => {
             window.alert("Data is empty");
         }
         else{
-            const res= await fetch("https://ad-check.herokuapp.com/login", {
+            const res= await fetch("/login", {
                 method:"POST",
                 headers:{
                     "Content-Type": "application/json"
@@ -33,7 +33,7 @@ const Userlogin = () => {
                     password:password,
                     check:"OK"
                 }),
-                credentials: "include"
+    
             });
             const data= await res.json();
             console.log("data is "+data.message);

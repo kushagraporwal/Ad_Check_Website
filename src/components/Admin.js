@@ -9,7 +9,7 @@ const Admin = () => {
   const callinfo = async()=>{
     try{
         console.log('welcome');
-        const res= await fetch(`https://ad-check.herokuapp.com/admin`,{
+        const res= await fetch(`/admin`,{
             method: "GET",
             headers: {
                 Accept: "application/json",
