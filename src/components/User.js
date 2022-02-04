@@ -21,7 +21,7 @@ const User = () => {
   const callinfo = async()=>{
     try{
         console.log('welcome');
-        const res= await fetch(`/${userid}/info`,{
+        const res= await fetch(`https://ad-check.herokuapp.com/${userid}/info`,{
             method: "GET",
             headers: {
                 Accept: "application/json",

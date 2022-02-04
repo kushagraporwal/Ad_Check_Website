@@ -23,7 +23,7 @@ const Adminlogin = () => {
             window.alert("Data is empty");
         }
         else{
-            const res= await fetch("/login2", {
+            const res= await fetch("https://ad-check.herokuapp.com/login2", {
                 method:"POST",
                 headers:{
                     "Content-Type": "application/json"
